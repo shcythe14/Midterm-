@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Calculator</title>
+	<style>
+		table {
+			border-radius: 50px;
+		}
+		td {
+			padding: 15px 20px;
+			text-align: center;
+			border-radius: 5px;
+		}
+		input {
+			text-align: center;
+			border: none;
+			width: 70%;
+			height: 20px;
+			padding: 5px;
+			font-size: 20px;
+			font-weight: bold;
+			border-radius: 5px;
+		}
+		input:focus {
+			outline: none;
+			border-radius: 5px;
+		}
+		#display: {
+			width: 80px;
+			padding: 10px;
+			font-size: 22px;
+			font-weight: bold;
+			border-radius: 5px;
+			border-color: white;
+		}
+		button {
+			width: 70px;
+			padding: 2px 2px;
+			font-size: 25px;
+			font-weight: bold;
+			border-radius: 5px;
+			background: white;
+		}
+	</style>
+</head>
+<body>
+	<table style="background-color: black;">
+		<tr>
+			<td colspan="4"><input type="text" id="display"></td>
+		</tr>
+		<tr>
+			<td colspan="4"><input type="text" id="result"></td>
+		</tr>
+		<tr>
+			<td onclick="add('+')"><button>+</button></td>
+			<td onclick="add('-')"><button>-</button></td>
+			<td onclick="add('*')"><button>*</button></td>
+			<td onclick="add('/')"><button>/</button></td>
+		</tr>
+		<tr>
+			<td onclick="add(1)"><button>1</button></td>
+			<td onclick="add(2)"><button>2</button></td>
+			<td onclick="add(3)"><button>3</button></td>
+			<td onclick="calculate()"><button>=</button></td>
+		</tr>
+		<tr>
+			<td onclick="add(4)"><button>4</button></td>
+			<td onclick="add(5)"><button>5</button></td>
+			<td onclick="add(6)"><button>6</button></td>
+			<td onclick="add('.')"><button>.</button></td>
+		</tr>
+		<tr>
+			<td onclick="add(7)"><button>7</button></td>
+			<td onclick="add(8)"><button>8</button></td>
+			<td onclick="add(9)"><button>9</button></td>
+			<td colspan="2" onclick="add(0)"><button>0</button></td>
+		</tr>
+		<tr>
+			<td colspan="4" onclick="reset()" style="width: 80px"><button>Clear</button></td>
+		</tr>
+	</table>
+
+</body>
+</html>
+
+<script type="text/javascript" src="calculator.js"></script>
